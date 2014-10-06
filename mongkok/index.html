@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MongKok (WordPress) Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="container">
+	<header class="row">
+		<nav id="main-nav" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">MongKok (WP) Manual</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#key-features">Key Features</a></li>
+								<li><a href="#getting-started">Getting Started</a></li>
+								<li class="divider"></li>
+								<li><a href="#installing-the-mongkok-theme-in-modx">Installing the MongKok Theme in WordPress</a></li>
+								<li class="divider"></li>
+								<li><a href="#changing-the-color-scheme">Changing the Color Scheme</a></li>
+								<li><a href="#changing-the-typeface">Changing the Typeface</a></li>
+								<li class="divider"></li>
+								<li><a href="#changing-the-position-of-navigation-bar">Changing the Position of Navigation Bar</a></li>
+								<li><a href="#changing-the-off-canvas-navigation-animation">Changing the Off-canvas Navigation Animation</a></li>
+								<li><a href="#adding-contents-to-the-navigation-bar">Adding Contents to the Navigation Bar</a></li>
+								<li><a href="#other-settings-of-the-navigation-bar">Other Settings of the Navigation Bar</a></li>
+								<li class="divider"></li>
+								<li><a href="#creating-removing-a-section">Creating / Removing a Section</a></li>
+								<li><a href="#reordering-sections">Reordering Sections</a></li>
+								<li><a href="#shortcodes-in-sections">Shortcodes in Sections</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#adding-contents-to-the-welcome-section">Adding Contents to the Welcome Section</a></li>
+								<li><a href="#using-ticker">Using Ticker</a></li>
+								<li><a href="#changing-the-height-of-the-welcome-section">Changing the Height of the Welcome Section</a></li>
+								<li><a href="#fix-unfix-the-welcome-section">Fix / Unfix the Welcome Section</a></li>
+								<li><a href="#showing-hiding-box-shadow">Showing / Hiding Box Shadow</a></li>
+								<li><a href="#other-settings-of-the-welcome-section">Other Settings of the Welcome Section</a></h3>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About & Resume <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#adding-contents-to-the-about-section">Adding Contents to the About Section</a></li>
+								<li class="divider"></li>
+								<li><a href="#adding-education-and-experience-to-the-resume-section">Adding Education and Experience to the Resume Section</a></li>
+								<li><a href="#adding-honors-and-rewards-to-the-resume-section">Adding Honors and Rewards to the Resume Section</a></li>
+								<li><a href="#adding-charts-to-the-resume-section">Adding Charts to the Resume Section</a></li>
+								<li><a href="#other-settings-of-charts">Other Settings of Charts</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#adding-a-portfolio-category">Adding a Portfolio Category</a></li>
+								<li><a href="#adding-items-to-a-portoflio-category">Adding Items to a Portoflio Category</a></li>
+								<li><a href="#setting-up-the-portfolio-section">Setting Up the Portfolio Section</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Events, Books, Blog & Gallery <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#editing-the-events-section">Editing the Events Section</a></li>
+								<li class="divider"></li>
+								<li><a href="#adding-an-animated-book">Adding an Animated Book</a></li>
+								<li><a href="#changing-css3-transitions-of-animated-books">Changing CSS3 Transitions of Animated Books</a></li>
+								<li><a href="#other-settings-of-animated-books">Other Settings of Animated Books</a></li>
+								<li class="divider"></li>
+								<li><a href="#setting-up-the-blog-section">Setting up the Blog Section</a></li>
+								<li><a href="#adding-removing-sidebar-widgets-in-blog">Adding / Removing Sidebar Widgets in Blog</a></li>
+								<li><a href="#adding-removing-a-blog-post">Adding / Removing a Blog Post</a></li>
+								<li><a href="#approving-deleting-a-comment">Approving / Deleting a Comment</a></li>
+								<li class="divider"></li>
+								<li><a href="#adding-items-to-the-gallery-section">Adding Items to the Gallery Section</a></li>
+								<li><a href="#setting-up-the-gallery-section-and-lightboxes">Setting Up the Gallery Section and Lightboxes</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#setting-up-google-maps">Setting Up Google Maps</a></li>
+								<li><a href="#setting-up-the-contact-form">Setting Up the Contact Form</a></li>
+								<li><a href="#editing-contact-information-and-social-links">Editing contact information and social links</a></li>
+								<li><a href="#setting-up-the-footer">Setting Up the Footer</a></li>
+								<li><a href="#setting-up-google-analytics">Setting Up Google Analytics</a></li>
+								<li class="divider"></li>
+								<li><a href="#search-engine-optimization-seo">Search Engine Optimization (SEO)</a></li>
+								<li><a href="#adding-custom-css">Adding Custom CSS</a></li>
+								<li><a href="#browser-compatibility">Browser Compatibility</a></li>
+								<li><a href="#theme-support">Theme Support</a></li>
+								<li><a href="#credits">Credits</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div>
+				<h1>MongKok</h1>
+				<h2>A Modern Onepage Resume / Personal Template (WordPress Version)</h2>
+				<h3 id="key-features">Key Features</h3>
+
+				<p>MongKok is a modern onepage resume / personal WordPress theme on Bootstrap 3 with lots of options for customization. The key features of this theme include:</p>
+
+				<ul>
+					<li>Modern design</li>
+					<li>Responsive layouts</li>
+					<li>Flexible color scheme (single color / dual colors)</li>
+					<li>5 predefined color schemes</li>
+					<li>4 navigation bar positions (top, bottom, left, right)</li>
+					<li>6 CSS3 Off-canvas navigation animations (push, reveal, scale up, rotate in, rotate out, rotate & reveal)</li>
+					<li>Resume section with clean typography</li>
+					<li>4 types of charts (bar chart, pie chart, donut chart, progress chart) with on-scroll animations</li>
+					<li>AJAX portfolio section</li>
+					<li>3 types of predefined layouts plus the option to use your own layout for portfolio details</li>
+					<li>Image slider and YouTube / Vimeo videos can be used in portfolio details</li>
+					<li>Book section with CSS3 animated books</li>
+					<li>2 predefined 3D transitions for animated books plus 2D fallback</li>
+					<li>Gallery section with lightboxes for images, YouTube / Vimeo videos and webpages</li>
+					<li>Styled / original Google Maps</li>
+					<li>Working AJAX contact form</li>
+					<li>Lots of code snippets to help you create your own content</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 id="getting-started">Getting Started</h3>
+
+				<p>The Bootstrap 3 CSS stylesheets used in this template are linked directly to CDNs (Content Delivery networks). Before editing the template, please make sure that you are connected to the Internet. Otherwise, the template will not be able to work properly.</p>
+			</div>
+
+			<div>
+				<h3 id="installing-the-mongkok-theme-in-modx">Installing the MongKok Theme in WordPress</h3>
+				<!-- install in latest wp ver -->
+				<p class="important">We recommend installing the MongKok theme in a new WordPress site. If you want to install the theme on an existing WordPress site, please make sure that you back up all the important documents and files in your site before doing so.</p>
+				<p class="important">To ensure that the MongKok theme can work smoothly, please install it on WordPress 3.9+.</p>
+
+				<p>To install the theme, </p>
+				<ol>
+					<li>Log on to your WordPress site and navigate to <strong>Appearance</strong> > <strong>Themes</strong>.</li>
+					<li>Click the <strong>Add New</strong> button at the top and then click <strong>Upload Theme</strong>.</li>
+					<li>Select the theme package (mongkok-wp-[version number].zip) and click <strong>Install Now</strong>.</li>
+					<li>After the theme has been successfully installed, click <strong>Activate</strong>.</li>
+					<li>Next, navigate to <strong>Tools</strong> > <strong>Import</strong> and click the <strong>WordPress</strong> link at the bottom.</li>
+					<li>If you haven't installed the WordPress Importer, click <strong>Install Now</strong> to install it. If you already have the WordPress Importer installed, you can skip Step 7 and proceed to Step 8.</li>
+					<li>Click <strong>Activate Plugin & Run Importer</strong> after the importer is installed.</li>
+					<li>Select the MongKok quickstart XML file (mongkok-wp-quickstart.xml) from the theme package and and click <strong>Upload file and import</strong>.</li>
+					<li>Next, you can assign the imported content to an author. Choose the option that meets your need (Very often, you want to assign posts to an existing user) and then check <strong>Download and import file attachments</strong> and click <strong>Submit</strong>.</li>
+					<li>After the quickstart content has been successfully imported, navigate to <strong>Settings</strong> > <strong>Reading</strong>, and check <strong>A static page</strong> in the <strong>Front page displays</strong> field. Choose the <strong>MongKok Homepage</strong> in the drop-down list <strong>Front page</strong> and choose <strong>MongKok Blog</strong> in the drop-down list <strong>Posts page</strong>. Then click <strong>Save Changes</strong>.</li>
+					<li>Now we will set up the menu. Navigate to <strong>Appearance</strong> > <strong>Menus</strong> and click <strong>Screen Options</strong> at the top.</li>
+					<li>In the <strong>Show on screen</strong> section, check <strong>Sections</strong> and <strong>Links</strong> and uncheck other options. In the <strong>Show advanced menu properties</strong> section, check <strong>Description</strong>.</li>
+					<li>Next, switch to the <strong>Manage Locations</strong> tab. Select the menu <strong>MongKok Navbar</strong> and assign it to the theme location <strong>MongKok Off-Canvas Navigation</strong>. Then click <strong>Save Changes</strong>.</li>
+					<li>Navigate to <strong>Appearance</strong> > <strong>Widgets</strong>. Refer to the section <a href="#adding-removing-sidebar-widgets-in-blog"><strong>Adding / Removing Sidebar Widgets in Blog</strong></a> to setup the recommended widgets.</li>
+					<li>Finally, navigate to <strong>Posts</strong> and trash the default <strong>Hello world!</strong> post installed by WordPress. (You can restore the post later in case you need it.)</li>
+					<li>Now you will have a working MongKok theme running on WordPress.</li>
+				</ol>
+			</div>
+
+			<div>
+				<h3 id="changing-the-color-scheme">Changing the Color Scheme</h3>
+			
+				<p>A color scheme in the MongKok template consists of two colors: primary color and secondary color. To change the color scheme, navigate to <strong>MongKok</strong> > <strong>Color Scheme</strong> in WordPress' admin interface. In the <strong>Color scheme</strong> field, select <strong>Custom Color Scheme</strong>. Then change the primary color through the field <strong>Primary color</strong> and change the secondary color through the field <strong>Secondary color</strong>.</p>
+
+				<p>You can also use a single color instead of dual colors in the color scheme. Simply make the value of the field <strong>Secondary color</strong> equal to the value of the field <strong>Primary color</strong>. You will then have a monotone version of the template.</p>
+
+				<p>The MongKok template comes with 5 predefined color schemes. You can choose a scheme you like in the <strong>Color scheme</strong> field.</p>
+
+				<p>The <strong>Color Scheme</strong> tab also contains advanced color settings for other components of the theme. You can change and adjust their values according to your needs. However, most of the time the template will work well even if you don't change their values.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-the-typeface">Changing the Typeface</h3>
+
+				<p>3 different fonts are used in the body text, the title text and the signatures of the MongKok template respectively. To change the typeface, navigate to <strong>MongKok</strong> > <strong>Typography</strong> in WordPress' admin interface and specify the Google Fonts to use through the field <strong>Body Font</strong>, <strong>Title Font</strong> and <strong>Signature Font</strong>.</p>
+
+				<p>In the <strong>Typography</strong> tab, you can also specifies the font size and the line height of the body text, and the font weights for the body text and the title text.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-the-position-of-navigation-bar">Changing the Position of Navigation Bar</h3>
+
+				<p>There are 4 navigation bar positions available in the MongKok template. You can place the navigation bar at the top, bottom, left or right of the browser viewport.</p>
+				<p>To change the position of the navigation bar, navigate to <strong>MongKok</strong> > <strong>Navigation Bar</strong> in WordPress' admin interface. Select <strong>Top</strong>, <strong>Bottom</strong>, <strong>Left</strong> or <strong>Right</strong> from the field <strong>Navigation Bar Position</strong> according to your preference and then save the changes you have made.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-the-off-canvas-navigation-animation">Changing the Off-canvas Navigation Animation</h3>
+
+				<p>There are 6 off-canvas navigation animations available in the MongKok template. Most of the time, the navigation bar is hidden from the browser viewport, and it will move into the viewport once you click the navigation bar toggle. The 6 animations available are push, reveal, scale up, rotate in, rotate out and rotate & reveal.</p>
+				<p>To change the navigation animation, navigate to <strong>MongKok</strong> > <strong>Navigation Bar</strong> in WordPress' admin interface. Select <strong>Push</strong>, <strong>Reveal</strong>, <strong>Scale up</strong>, <strong>Rotate in</strong>, <strong>Rotate out</strong> or <strong>Rotate & Reveal</strong> from the field <strong>Off-Canvas Navigation Animation</strong> according to your preference and then save the changes you have made.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-contents-to-the-navigation-bar">Adding Contents to the Navigation Bar</h3>
+
+				<p>You can add your name, menu items, social links and other information to the navigation bar. To do so, navigate to <strong>MongKok</strong> > <strong>Navigation Bar</strong> in WordPress' admin interface. You can then add your name to the <strong>Content before Menu</strong> field, and your social links to the <strong>Content after Menu</strong> field. If you want to restore the default contents of these two fields, click the <strong>Reset Section</strong> button at the top.</p>
+				<p>If the navigation bar is at the top / bottom of the browser viewport, the contents before menu and after menu will be hidden. These contents will only be visible when the navigation bar is at the left / right of the browser viewport.</p>
+				<p>If you need a menu item to link to an external resource, navigate to <strong>Appearance</strong> > <strong>Menus</strong> in WordPress' admin interface. You can then add a link to the menu through the <strong>Links</strong> panel on the left. Once it is added to the menu, expand the link item in the section <strong>Menu Structure</strong> on the right. Through the field <strong>Description</strong>, you can assign a FontAwesome Icon to this link item. You can also drag the link item inside <strong>Menu Structure</strong> to rearrange its position. Finally, remember to save the changes by clicking the <strong>Save Menu</strong> button at the top.</p>
+			</div>
+
+			<div>
+				<h3 id="other-settings-of-the-navigation-bar">Other Settings of the Navigation Bar</h3>
+
+				<p>To access other settings of the navigation bar, navigate to <strong>MongKok</strong> > <strong>Navigation Bar</strong> in WordPress' admin interface. To change the colors used in the navigation bar, switch to the <strong>Color Scheme</strong> tab and change the related settings.</p>
+			</div>
+
+			<div>
+				<h3 id="creating-removing-a-section">Creating / Removing a Section</h3>
+
+				<p>To create a new section, </p>
+				<ol>
+					<li>Navigate to <strong>Sections</strong> > <strong>Add New Section</strong> in WordPress' admin interface.</li>
+					<li>Give this section a title, which will appear in the navigation bar of the MongKok theme.</li>
+					<li>Add content to this section by typing HTML codes through WordPress' editor. The code snippets page that comes with this theme package can help you add HTML codes that are inline with the MongKok theme style.</li>
+					<li>Scroll to the bottm and select <strong>General</strong> as the template for this new section. (Ohter section templates are for the existing built-in MongKok sections.)</li>
+					<li>You may also want to specify the heading for this section if it is different from the title.</li>
+					<li>Give this section an order value through the <strong>Attributes</strong> panel on the right. Sections with smaller order values will appear first.</li>
+					<li>Click <strong>Publish</strong> to save the new section.</li>
+					<li>Next, navigate to <strong>Appearance</strong> > <strong>Menus</strong> in WordPress' admin interface.</li>
+					<li>Select the newly created section in the <strong>Sections</strong> panel on the left and click <strong>Add to Menu</strong>.</li>
+					<li>Expand the menu item for the new section in <strong>Menu Structure</strong> on the right. Specify the FontAwesome icon for this section through the <strong>Description</strong> field and click <strong>Save Menu</strong>. Now A menu item for the new section will be created in the navigation bar.</li>
+				</ol>
+
+				<p>To remove a section, navigate to <strong>Sections</strong> in WordPress' admin interface. Hover over a section and click <strong>Trash</strong>. <span class="important">We do not recommend permanently deleting existing sections that come with the MongKok template since it will not be possible to restore them if you need them later. If you don't need to use a particular section, simply trash it.</span></p>
+			</div>
+
+			<div>
+				<h3 id="reordering-sections">Reordering Sections</h3>
+
+				<p>Section order is determined by the order value specifed in the <strong>Attributes</strong> panel of each section. Sections with smaller order values will appear first in the front page.</p>
+			</div>
+
+			<div>
+				<h3 id="shortcodes-in-sections">Shortcodes in Sections</h3>
+
+				<p>The MongKok WordPress theme uses the following shortcodes to render parts of the section contents. If some section contents do not show up, you may want to check if they have been accidently deleted.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 30%">Shortcode Syntax</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 30%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>[profile_pic]</strong></td>
+							<td>Render the profile picture</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><strong>[list type="{Content Type}"]</strong> or<br><strong>[list type="{Content Type}" half_margin_bottom=1]</strong></td>
+							<td>Render an item list (with half the margin-bottom value if specified)</td>
+							<td><strong>{Content Type}</strong> can be <strong>education</strong>, <strong>experience</strong>, or <strong>honor</strong>.</td>
+						</tr>
+						<tr>
+							<td><strong>[chart id="{Chart ID}"]</strong></td>
+							<td>Render an animated chart</td>
+							<td><strong>{Chart ID}</strong> is required.</td>
+						</tr>
+						<tr>
+							<td><strong>[contact_form]</strong></td>
+							<td>Render the contact form</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="adding-contents-to-the-welcome-section">Adding Contents to the Welcome Section</h3>
+
+				<p>The welcome section is the first section of this template. This section is designed to display your basic information such as your name and your contact methods in a way that grabs attentions. The content of this section is defined in the following format.</p>
+				<pre>&lt;p class=&quot;before-name title-font uppercase letter-spacing&quot;&gt;<span class="important">[Any text before name]</span>&lt;/p&gt;
+&lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;<span class="important">[Your name]</span>&lt;/span&gt;&lt;/h1&gt;
+&lt;p class=&quot;after-name&quot;&gt;&lt;span class=&quot;span-text title-font&quot;&gt;<span class="important">[Any text after name]</span>&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;row info&quot;&gt;
+	&lt;div class=&quot;col-md-4&quot;&gt;&lt;p&gt;&lt;i class=&quot;fa fa-mobile-phone&quot;&gt;&lt;/i&gt;<span class="important">[Telephone]</span>&lt;/p&gt;&lt;/div&gt;
+	&lt;div class=&quot;col-md-4&quot;&gt;&lt;p&gt;&lt;i class=&quot;fa fa-envelope-o&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#&quot;&gt;<span class="important">[Email]</span>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+	&lt;div class=&quot;col-md-4&quot;&gt;&lt;p&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#&quot;&gt;<span class="important">[Website]</span>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+				<p>There are basically 4 subsections in the welcome section: <strong>the before-name subsection</strong>, <strong>the name subsection</strong>, <strong>the after-name subsection</strong> and <strong>the info subsection</strong>. Any text that you want to appear before your name can be placed in the before-name subsection. Your name can be placed in the name subsection, and any text that you want to appear after your name, such as your position, can be placed in the after-name subsection. Your contact info, such as your telephone, email and website can be placed in the info subsection.</p>
+				<p>The class <strong>span-text</strong> is to make the text span the whole width of its container. The class <strong>title-font</strong> is to indicate the use of the font for the title text instead of the body text. The other classes used in the code above should be quite self-explanatory. For more about the use of the typography classes, please refer to the code snippets page that comes with the theme package.</p>
+			</div>
+
+			<div>
+				<h3 id="using-ticker">Using Ticker</h3>
+
+				<p>In the name subsection, besides using static text as in the example above, you can also use the following code to create a ticker.</p>
+				<pre>&lt;div class=&quot;ticker&quot;&gt;
+  &lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;I'm Creative&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;I'm Talented&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;I'm John Doe&lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;</pre>
+			</div>
+
+			<div>
+				<h3 id="changing-the-height-of-the-welcome-section">Changing the Height of the Welcome Section</h3>
+
+				<p>To change the height of the welcome section, navigate to <strong>MongKok</strong> > <strong>Welcome</strong> in WordPress' admin interface. Then change the value of the field <strong>Height of the Welcome Section</strong> to the height you want to use.</p>
+				<p>The unit of the height value can be <strong>px</strong> or <strong>%</strong>. Some typical height values are 100%, 80% and 500px.</p>
+			</div>
+
+			<div>
+				<h3 id="fix-unfix-the-welcome-section">Fix / Unfix the Welcome Section</h3>
+
+				<p>You can fix / unfix the welcome section in the MongKok template. If the welcome section is fixed, it will stay at the same position when you scroll the webpage.</p>
+				<p>Navigate to <strong>MongKok</strong> > <strong>Welcome</strong> in WordPress' admin interface. Check or uncheck the field <strong>Fix the Welcome Section</strong> to fix / unfix the welcome section.</p>
+			</div>
+
+			<div>
+				<h3 id="showing-hiding-box-shadow">Showing / Hiding Box Shadow</h3>
+
+				<p>To show / hide the box shadow at the bottom of the welcome section, navigate to <strong>MongKok</strong> > <strong>Welcome</strong> in WordPress' admin interface. Set the value of the field <strong>CSS Box Shadow</strong> to any valid value of the CSS property <strong>box-shadow</strong> such as <strong>0 0 15px 0 rgba(0,0,0,.5)</strong> or <strong>none</strong>. Please refer to <a href="http://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">this webpage</a> for details of the box-shadow property.</p>
+			</div>
+
+			<div>
+				<h3 id="other-settings-of-the-welcome-section">Other Settings of the Welcome Section</h3>
+
+				<p>To access other settings of the welcome section, navigate to <strong>MongKok</strong> > <strong>Welcome</strong> in WordPress' admin interface. To change the colors used in the welcome section, switch to the <strong>Color Scheme</strong> tab and change the related settings.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-contents-to-the-about-section">Adding Contents to the About Section</h3>
+
+				<p>The about section lets you add your profile picture and some descriptions about yourself.</p>
+				<p>To change the profile picture, navigate to <strong>MongKok</strong> > <strong>Profile Picture</strong> in WordPress' admin interface. Then select / upload your profile picture through the field <strong>Profile Picture</strong>.You can also select an image style for your profile picture from the field <strong>Image Style of Profile Picture</strong>.</p>
+				<p>This field <strong>Maximum Width of Profile Picture</strong> is to impose the maximum width for the profile picture, so that it will not appear too large on mobile devices. Its default value is <strong>300px</strong>.</p>
+				<p>To change the intro part of the about section, navigate to <strong>Sections</strong> in WordPress' admin interface and click the <strong>About</strong> section. Edit its content to modify the introduction. You can use drop caps, bold text, links and other typographic styles. The HTML code snippets for these styles can be found in the code snippets page included in the theme package. The shortcode <strong>[profile_pic]</strong> is used to render your profile picture.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-education-and-experience-to-the-resume-section">Adding Education and Experience to the Resume Section</h3>
+
+				<p>Education and experience in the resume section are actually two item lists. Each education item and each experience item are defined in the following formats.</p>
+				<pre>
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;p class=&quot;title-style sm-text-center&quot;&gt;<span class="important">[University name]</span>&lt;/p&gt;
+        &lt;p class=&quot;tag sm-text-center&quot;&gt;<span class="important">[Period]</span>&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-8&quot;&gt;
+        &lt;p class=&quot;title-style&quot;&gt;<span class="important">[Degree earned]</span>&lt;/p&gt;
+        &lt;p&gt;<span class="important">[Additional info]</span>&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</pre>
+
+
+				<pre>
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;p class=&quot;title-style sm-text-center&quot;&gt;<span class="important">[Company name]</span>&lt;/p&gt;
+        &lt;p class=&quot;tag sm-text-center&quot;&gt;<span class="important">[Period]</span>&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-8&quot;&gt;
+        &lt;p class=&quot;title-style&quot;&gt;<span class="important">[Position]</span>&lt;/p&gt;
+        &lt;p&gt;<span class="important">[Job description]</span>&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</pre>
+				<p>To edit an education / experience item, navigate to <strong>Education</strong> or <strong>Experience</strong> in WordPress' admin interface. Select an item inside to edit it.</p>
+				<p>To create a new item, navigate to <strong>Education</strong> or <strong>Experience</strong> and select <strong>Add New Education Item</strong> and <strong>Add New Education Item</strong> in WordPress' admin interface. Use the HTML format above to create a new education / experience item.</p>
+				<p>To remove an education / experience item, navigate to <strong>Education</strong> or <strong>Experience</strong> in WordPress' admin interface. Simply mouse over an item and click <strong>Trash</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-honors-and-rewards-to-the-resume-section">Adding Honors and Rewards to the Resume Section</h3>
+
+				<p>Each item of honors and rewards is defined in the following format.</p>
+				<pre>&lt;p&gt;&lt;span class=&quot;title-style&quot;&gt;<span class="important">[Honor / Award name]</span>&lt;/span&gt;
+      &lt;br&gt;<span class="important">[Additional info]</span>&lt;/p&gt;</pre>
+				<p>To edit an honors and rewards item, navigate to <strong>Honors</strong> in WordPress' admin interface. Select an item inside to edit it.</p>
+				<p>To create a new item of honors and rewards, navigate to <strong>Honors</strong> and select <strong>Add New Honor Item</strong> in WordPress' admin interface. Use the HTML format above to create a new honor item.</p>
+				<p>To remove an item of honors and rewards, navigate to <strong>Honors</strong> in WordPress' admin interface. Simply mouse over an item and click <strong>Trash</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-charts-to-the-resume-section">Adding Charts to the Resume Section</h3>
+
+				<p>There are 4 types of charts available in the MongKok template: <strong>bar charts</strong>, <strong>donut charts</strong>, <strong>pie charts</strong> (a special case of donut charts), and <strong>the progress charts</strong>. We recommend creating your own charts based on the existing ones in the sample data. If you don't need a particular chart, you can simply trash it instead of permanently deleting it. By doing so, you can reuse the chart quickly by untrashing it in case you need it later. If you need more charts, you can create one more efficiently by referring to the sample charts.</p>
+
+				<p>To create a chart,</p>
+				<ul>
+					<li>Navigate to <strong>Charts</strong> > <strong>Add New Chart</strong> in WordPress' admin interface.</li>
+					<li>Give this chart a title. You may also want to add some descriptions for this chart which will appear above the chart through WordPress' editor.</li>
+					<li>Scroll to the bottom and specify the chart ID. <span class="important">Please note that each chart requires a unique ID in order to work properly.</span></li>
+					<li>Specify the chart type and add chart items, item values and item colors.</li>
+					<li>Follow the tips on screen to specify other attributes of the new chart if necessary.</li>
+					<li>Click <strong>Publish</strong> to save and create the new chart.</li>
+				</ul>
+
+				<h4>HTML Code of Sample Charts</h4>
+				<p>The HTML code of sample charts are available in the code snippets page that comes with the theme package. It is possible to create charts by copying the code snippets and paste them to WordPress' Editor when editing a section.</p>
+			</div>
+
+			<div>
+				<h3 id="other-settings-of-charts">Other settings of Charts</h3>
+
+				<p>To set up charts in the MongKok template, navigate to <strong>MongKok</strong> > <strong>Bar Chart</strong>, <strong>Donut / Pie Chart</strong> or <strong>Progress Chart</strong> in WordPress's admin interface. The settings there give you various options to fine-tune the animated charts.</p>
+
+			</div>
+
+			<div>
+				<h3 id="adding-a-portfolio-category">Adding a Portfolio Category</h3>
+
+				<p>To add a portfolio category,</p>
+				<ol>
+					<li>Navigate to <strong>Portfolio</strong> > <strong>Portfolio Category</strong> in WordPress's admin interface.</li>
+					<li>Enter the name and the slug for the new category. <span class="important">Please note that portfolio categories are ordered by slug.</span></li>
+					<li>Click <strong>Add New Portfolio Category</strong> to save the new category.</li>
+				</ol>
+			</div>
+
+			<div>
+				<h3 id="adding-items-to-a-portoflio-category">Adding Items to a Portoflio Category</h3>
+
+				<p>To add a portfolio item,</p>
+				<ol>
+					<li>Navigate to <strong>Portfolio</strong> > <strong>Add New Portfolio Item</strong> in WordPress's admin interface.</li>
+					<li>Type in the name of this portfolio item and its content through WordPress' editor.</li>
+					<li>Scroll to the bottom of the page, you will see more options that allow you to further set up the portfolio item.</li>
+					<li>Give this portfolio item a thumbnail through the field <strong>Thumbnail</strong>.</li>
+					<li>Through the field <strong>Layout</strong>, you can select one of the three predefined layouts for portfolio items provided by the MongKok template: <strong>Image slider</strong>, <strong>YouTube Video</strong> and <strong>Vimeo Video</strong>. If you would like to use your own layout, select <strong>Free Layout</strong>.
+						<ul>
+							<li>If you use an image slider layout, you can then proceed to the <strong>Slider Images</strong> field.</li>
+							<li>If you use an YouTube video layout, you can then proceed to specifies the URL of the video through the field <strong>YouTube Video</strong>.</li>
+							<li>If you use an Vimeo video layout, you can then proceed to specifies the URL of the video through the field <strong>Vimeo Video</strong>.</li>
+						</ul>
+					</li>
+					<li>Through the field <strong>Sidebar Position</strong>, you can place the sidebar content on the left or on the right. If you don't need a sidebar, select <strong>No Sidebar</strong>.
+						<ul>
+							<li>If sidebar is used, you can then proceed to add content of the sidebar through the field <strong>Sidebar Content</strong>.</li>
+						</ul>
+					</li>
+					<li>Specify the portfolio categories you would like to add this item to through the <strong>Portfolio Categories</strong> panel on the right.</li>
+					<li>Give this portfolio item an order value through the <strong>Attributes</strong> panel on the right. Sections with smaller order values will appear first.</li>
+					<li>Click <strong>Publish</strong> to publish this portfolio item.</li>
+				</ol>
+				<p class="important">Since portfolio items are loaded using AJAX, when editing the HTML code of an item, we recommend you use <strong>absolute paths</strong> in all the <strong>a</strong>, <strong>img</strong> and <strong>iframe</strong> tags. If you want to use relative paths in these tags, please use:</p>
+				<ol class="important">
+					<li>the <strong>data-href</strong> attribute instead of the <strong>href</strong> attribute in the <strong>a</strong> tags,</li>
+					<li>the <strong>data-src</strong> attribute instead of the <strong>src</strong> attribute in the <strong>img</strong> tags and the <strong>iframe</strong> tags.</li>
+				</ol>
+				<p class="important">Otherwise, URLs of images and links will not be interpreted correctly.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-portfolio-section">Setting Up the Portfolio Section</h3>
+
+				<p>To set up the portfolio section, navigate to <strong>MongKok</strong> > <strong>Portfolio</strong> in WordPress's admin interface. Most of the settings there are self-explanatory.</p>
+			</div>
+
+			<div>
+				<h3 id="editing-the-events-section">Editing the Events Section</h3>
+
+				<p>To edit the description of the events section, navigate to <strong>Sections</strong> in WordPress's admin interface and click <strong>Events</strong>. Edit through WordPress' editor to modify the description.</p>
+
+				<p>To add an event,</p>
+				<ol>
+					<li>Navigate to <strong>Events</strong> > <strong>Add New Event</strong> in WordPress's admin interface.</li>
+					<li>Give the new event a name and type in the content of this event through WordPress' editor.</li>
+					<li>Scroll to the bottom of the page, and specify the date and location of the event.</li>
+					<li>Give this event an order value through the <strong>Attributes</strong> panel on the right. Sections with smaller order values will appear first.</li>
+					<li>Click <strong>Publish</strong> to publish this event.</li>
+				</ol>
+			</div>
+
+			<div>
+				<h3 id="adding-an-animated-book">Adding an Animated Book</h3>
+
+				<p>To add a animated book,</p>
+				<ol>
+					<li>Navigate to <strong>Books</strong> > <strong>Add New Book</strong> in WordPress's admin interface.</li>
+					<li>Type in the name of this book and its description through WordPress' editor.</li>
+					<li>Scroll to the bottom of the page, you will see more options that allow you to further set up the book.</li>
+					<li>Specify the background color for the back / front / left face of the book in Hex format.</li>
+					<li>Give this book a cover image through the field <strong>Book Cover Image</strong>.</li>
+					<li>Through the field <strong>Book Info (inside animated book)</strong>, type in the HTML code of the content that will appear when the animated book is opened.</li>
+					<li>Through the field <strong>Book Info (under description)</strong>, type in the HTML code of the content that will appear below the description of the book.</li>
+					<li>Give this book an order value through the <strong>Attributes</strong> panel on the right. Sections with smaller order values will appear first.</li>
+					<li>Click <strong>Publish</strong> to publish this book.</li>
+				</ol>
+			</div>
+
+			<div>
+				<h3 id="changing-css3-transitions-of-animated-books">Changing CSS3 Transitions of Animated Books</h3>
+
+				<h4>Using the Predefined Book Transitions</h4>
+				<p>There are 2 predefined 3D transitions for animated books. To change the transition, navigate to <strong>MongKok</strong> > <strong>Animated Books</strong> in WordPress's admin interface. Choose an animation through the field <strong>CSS Book Animation</strong>.</p>
+
+				<h4>Customizing Book Transitions</h4>
+				<p>If you are familar with CSS3 transform, you can even try creating your own book transitions. Simply select <strong>Custom Animation</strong> from the drop-down list of <strong>CSS Book Animation</strong>. Then you can specify the inital and hover CSS transform for books and book covers through the fields <strong>Initial CSS Transform Of Animated Books</strong>, <strong>Hover CSS Transform Of Animated Books</strong>, <strong>Initial CSS Transform Of Book Covers Of Animated Books</strong> and <strong>Hover CSS Transform Of Book Covers Of Animated Books</strong>.
+				<p class="important">If you are not familiar with CSS3 transform, it is highly recommended that you use one of the predefined book transitions. Since the stability of new book transitions is not guaranteed. </p>
+			</div>
+
+			<div>
+				<h3 id="other-settings-of-animated-books">Other Settings of Animated Books</h3>
+
+				<p>To set up the books section, navigate to <strong>MongKok</strong> > <strong>Animated Books</strong> in WordPress's admin interface. To change the colors used in the 2D fallback of animated books, switch to the <strong>Color Scheme</strong> tab and change the related settings.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-blog-section">Setting up the Blog Section</h3>
+
+				<p>To set up the blog section, navigate to <strong>MongKok</strong> > <strong>Blog</strong> in WordPress's admin interface. You can then specify whether or not to link the blog menu item in the navbar to the blog index page on blog pages, the number of blog posts shown in the blog section of the homepage, and the content of blog footer etc. Most of the settings are self-explanatory.</p>
+				<p>To add a widget on the right sidebar, navigate to <strong>Appearance</strong> > <strong>Widgets</strong> in WordPress's admin interface. Then you can drag widgets from <strong>Available Widgets</strong> and drop them to <strong>Blog right sidebar</strong> to add them. To remove a widget on the right sidebar, expand an existing widget from <strong>Blog right sidebar</strong> and click <strong>Delete</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-removing-sidebar-widgets-in-blog">Adding / Removing Sidebar Widgets in Blog</h3>
+
+				<p>To add a widget to the right sidebar, navigate to <strong>Appearance</strong> > <strong>Widgets</strong> in WordPress's admin interface. Then you can drag widgets from <strong>Available Widgets</strong> and drop them to <strong>Blog right sidebar</strong> to add them. To remove a widget from the right sidebar, expand an existing widget from <strong>Blog right sidebar</strong> and click <strong>Delete</strong>. We recommend removing <strong>Search</strong> from the right sidebar, since there is already a search bar displayed at the top of each blog page.</p>
+				<p>We recommend adding <strong>Recent Posts</strong>, <strong>Archives</strong>, <strong>Categories</strong>, <strong>Tag Cloud</strong> and <strong>Recent Comments</strong> to the right sidebar, with the option <strong>Display post date?</strong> enabled in <strong>Recent Posts</strong> and the option <strong>Show post counts</strong> enabled in <strong>Archives</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-removing-a-blog-post">Adding / Removing a Blog Post</h3>
+
+				<p>To add a blog post, </p>
+				<ol>
+					<li>Navigate to <strong>Posts</strong> > <strong>Add New</strong> in WordPress's admin interface.</li>
+					<li>Type in the title of this blog post and its content through WordPress' editor.</li>
+					<li>Use the <strong>More</strong> button in WordPress' Editor to define the boundary of the excerpt of this blog post. The excerpt will be displayed in the blog index page.</li>
+					<li>Scroll to the bottom of the page, you will see more options that allow you to further set up the blog post.</li>
+					<li>Specifies the categories and tags of this blog post through the fields <strong>Categories</strong> and <strong>Tags</strong> on the right sidebar.</li>
+					<li>Give this blog post item a thumbnail through the field <strong>Featured Image</strong> on the right sidebar.</li>
+					<li>Through the field <strong>Homepage Summary</strong>, give this blog post a summary which will be displayed in the blog section on the homepage. The homepage summary can be different from the excerpt defined in Step 3 and is a required field.</li>
+					<li>Click <strong>Publish</strong> to publish this portfolio item.</li>
+				</ol>
+
+				<p>To remove a blog post, navigate to <strong>Posts</strong> in WordPress' admin interface. Hover over a blog post and click <strong>Trash</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="approving-deleting-a-comment">Approving / Deleting a Comment</h3>
+
+				<p>By default, a new comment needs to be approved before it will be displayed on a blog post.</p>
+				<p>To approve a comment, </p>
+				<ol>
+					<li>Navigate to <strong>Comments</strong> in WordPress's admin interface.</li>
+					<li>Hover over a comment and click <strong>Approve</strong>.</li>
+				</ol>
+				<p>To delete a comment, </p>
+				<ol>
+					<li>Navigate to <strong>Comments</strong> in WordPress's admin interface.</li>
+					<li>Hover over a comment and click <strong>Trash</strong>.</li>
+				</ol>
+			</div>
+
+			<div>
+				<h3 id="adding-items-to-the-gallery-section">Adding Items to the Gallery Section</h3>
+
+				<p>The gallery section allows you to show your images, YouTube / Vimeo videos and webpages in a lightbox. The lightbox feature is provided by the Colorbox plug-in.</p>
+				<p>To add a gallery item,</p>
+				<ol>
+					<li>Navigate to <strong>Lightboxes</strong> > <strong>Add New Lightbox</strong> in WordPress's admin interface.</li>
+					<li>Type in the title of this lightbox.</li>
+					<li>Scroll to the bottom of the page, you will see more options that allow you to further set up the lightbox.</li>
+					<li>Through the field <strong>Thumbnail</strong>, specify the thumbnail for this lightbox.</li>
+					<li>Choose a content type for the lightbox. The 4 available content types are <strong>Image</strong>, <strong>YouTube Video</strong>, <strong>Vimeo Video</strong> and <strong>External Webpage</strong>.</li>
+					<li>Depending on the content type, specify the URL of the image, the YouTube Video, the Vimeo Video or the external webpage through the respective field.</li>
+					<li>Give this lightbox an order value through the <strong>Attributes</strong> panel on the right. Sections with smaller order values will appear first.</li>
+					<li>Click <strong>Publish</strong> to publish this lightbox.</li>
+				</ol>
+
+				<h4>Lightboxes outside the Gallery Section</h4>
+				<p>You may also use the lightbox feature outside the gallery section. Please refer to the code snippets page for the HTML code format.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-gallery-section-and-lightboxes">Setting Up the Gallery Section and Lightboxes</h3>
+
+				<p>To set up the gallery section, navigate to <strong>MongKok</strong> > <strong>Gallery</strong> in WordPress's admin interface. To set up lightboxes, switch to the <strong>Lightboxes</strong> tab.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-google-maps">Setting up Google Maps</h3>
+
+				<p>To set up Google Maps, navigate to <strong>MongKok</strong> > <strong>Google Maps</strong> in WordPress's admin interface. You can specify the latitude, longitude and zoom level of the map. Also you can change the appearance of the map by changing the fields of <strong>Gamma</strong>, <strong>Saturation</strong>, <strong>Lightness</strong> and <strong>Invert Lightness</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-contact-form">Setting up the Contact Form</h3>
+
+				<p>To set up the Contact Form, navigate to <strong>MongKok</strong> > <strong>Contact Form</strong> in WordPress's admin interface. Type in the email address in the <strong>Contact email</strong> field to receive messages submitted through the contact form. You can also customize the messages about submission status through the fields <strong>Success Message</strong> and <strong>Failure Message</strong>.</p>
+				<p>The contact form in this template is powered by <a href="http://codecanyon.net/item/ajax-contact-form/50846?WT.ac=category_item&amp;WT.seg_1=category_item&amp;WT.z_author=jigowatt" target="_blank">ajax contact form</a> written by jigowatt.</p>
+				<p>When you navigate to <strong>Pages</strong> in WordPress's admin interface, you will see a page titled <strong>MongKok Contact Form Processor</strong>. <span class="important">Please make sure that the template for this page is also set to <strong>MongKok Contact Form Processor</strong> and do not modify or remove this page as it is necessary and related to the functionality of the contact form.</span></p>
+			</div>
+
+			<div>
+				<h3 id="editing-contact-information-and-social-links">Editing contact information and social links</h3>
+
+				<p>To edit contact information, navigate to <strong>Sections</strong> in WordPress's admin interface and select <strong>Contact</strong>. You can then edit various contact information such as address, telephone, email address and web address through WordPress' editor.</p>
+				<p>To edit social links, please add / remove social links according to your needs inside the <strong>ul</strong> tag of the class name <strong>social</strong>.</p>
+				<p class="important">Please do not delete the short code <strong>[contact_form]</strong> as it is required in order for the contact form to work properly.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-footer">Setting up the Footer</h3>
+
+				<p>To edit the footer, navigate to <strong>Sections</strong> in WordPress's admin interface and select <strong>Footer</strong> to edit its content.</p>
+				<p>You can link to your PDF resume through the <strong>Download Resume</strong> button, add your own signature and modify the copyright information in the footer section.</p>
+				<p>To change the colors used in the footer, switch to the <strong>Color Scheme</strong> tab and change the related settings.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-google-analytics">Setting up Google Analytics</h3>
+
+				<p>To set up Google Analytics, navigate to <strong>Sections</strong> > <strong>General</strong> in WordPress's admin interface. Copy and paste the Google Analytics code to the field <strong>Google Analytics</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="search-engine-optimization-seo">Search Engine Optimization (SEO)</h3>
+
+				<p>To define meta keywords and meta description for search engines, navigate to <strong>Sections</strong> > <strong>General</strong> in WordPress's admin interface. Enter a comman-separated list of keywords to the field <strong>Meta Keywords</strong>. Enter a short and concise description of your website through the field <strong>Meta Description</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-custom-css">Adding Custom CSS</h3>
+
+				<p>If you are familiar with CSS, you can write your own CSS to overwrite the original template styling to further customize the MongKok theme.</p>
+				<p>To add your own custom CSS, navigate to <strong>Sections</strong> > <strong>General</strong> in WordPress's admin interface. Enter your own CSS without the <strong>&lt;style&gt;</strong> tag to the field <strong>Custom CSS</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="browser-compatibility">Browser Compatibility</h3>
+
+				<p>This template supports Chrome, Firefox, Safari and IE9+.</p>
+				<p>Note that some features of this template may be disabled on certain devices.</p>
+				<ul>
+					<li>Off-Canvas navigation animations require the support of CSS3 transitions and animations, and therefore are not available in IE9, where a jQuery fallback is provided.</li>
+					<li>3D CSS3 animated books require the support of the CSS3 property <strong>transform-style</strong>, and therefore are not available in IE9, IE10 and IE11, where a 2D fallback is provided.</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 id="theme-support">Theme Support</h3>
+
+				<p>If you have any question or problem when setting up or using the theme, or if you have found any bug of the theme, you are welcome to leave a message at <a href="http://themeforest.net/user/simonli" target="_blank">my profile page</a> at themeforest.net on <strong>weekdays (GMT+8)</strong>. Response normally will be given within 48 hours. Thank you for your support and understanding.</p>
+			</div>
+
+			<div>
+				<h3 id="credits">Credits</h3>
+				<ul>
+					<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3 (MIT License)</a></li>
+					<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome (SIL OFL 1.1, MIT License)</a></li>
+					<li><a href="http://jquery.com/" target="_blank">jQuery (MIT License)</a></li>
+					<li><a href="http://www.jacklmoore.com/colorbox/" target="_blank">Colorbox (MIT License)</a></li>
+					<li><a href="http://requirejs.org/" target="_blank">RequireJS (MIT License)</a></li>
+					<li><a href="http://codecanyon.net/item/ajax-contact-form/50846?WT.ac=category_item&amp;WT.seg_1=category_item&amp;WT.z_author=jigowatt" target="_blank">AJAX Contact Form (Extended License)</a></li>
+					<li><a href="http://d3js.org/" target="_blank">D3.js (BSD License)</a></li>
+					<li><a href="http://modernizr.com/" target="_blank">Modernizr (MIT License)</a></li>
+					<li><a href="https://gicthub.com/ericf/urljs" target="_blank">URL.js (MIT License)</a></li>
+					<li><a href="https://github.com/jquery/jquery-color" target="_blank">jQuery Color (MIT License)</a></li>
+					<li><a href="https://github.com/brandonaaron/jquery-getscrollbarwidth" target="_blank">Get Scrollbar Width (MIT and GPL License)</a></li>
+					<li><a href="https://github.com/EightMedia/hammer.js" target="_blank">Hammer.js (MIT License)</a></li>
+					<li><a href="http://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations/" target="_blank">Off-Canvas transitions inspired by Codrops</a></li>
+					<li><a href="http://reduxframework.com/" target="_blank">Redux Framework (GPLv3+)</a></li>
+					<li><a href="http://www.deluxeblogtips.com/meta-box/" target="_blank">Meta Box (GPL2+)</a></li>
+					<li><a href="https://github.com/sanchothefat/wp-less/" target="_blank">LESS CSS (MIT License)</a></li>
+					<li><a href="http://leafo.net/lessphp" target="_blank">lessphp (MIT License, GPLv3)</a></li>
+				</ul>
+			</div>
+
+			<footer>
+			<p><strong>Thank you for reading this manual.</strong></p>
+			<p>Created by Simon Li<br>Aug. 2014</p>
+			</footer>
+		</div>	
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
