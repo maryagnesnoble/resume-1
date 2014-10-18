@@ -9,7 +9,7 @@
 
 ### Profile {#profile}
 
-Experienced political writer and editor with skills in viral content creation and promotion.
+Experienced political writer and editor with exceptional skills in viral content creation.
 
 ------
 
@@ -39,15 +39,19 @@ Conversant in French, German, Spanish, Portuguese.
 Topix (offbeat.topix.com and politix.topix.com)
 : *Managing Editor, Politix and Offbeat websites*
   __Jan 2013-present__
-  Developed strategy for content distribution using a Facebook viral model.
-  Designed funny original content optimized for the social web.
+  - Developed strategy for content optimization and distribution using a Facebook viral model.
+  - Covered topics from LGBT and women's rights to education and electoral politics.
+  - Passionate about finding and crafting stories with a unique voice.
+  - Wrote quickly for the web (up to 12 stories per day) based on real-time trends on the social web.
+  - Produced longer deeply-researched and reported features each week.
+  - Offered original story angles and visually compelling takes on the news.
 
 Topix (politix.topix.com)
 : *Senior Editor, Politix*
  __Dec 2011 - Jan 2013__
- Created viral stories e.g...
- Shaped look and feel of content.
- Managed a team of writers working both in-house and remotely.
+ - Spearheaded the Politix editorial team from the site's launch in 2012
+ - Shaped look and feel of content.
+ - Managed and edited a team of writers working both in-house and remotely.
 
 ------
 
