@@ -18,7 +18,7 @@ Experienced political writer and editor with exceptional skills in viral content
 Topix (offbeat.topix.com and politix.topix.com)
 : *Managing Editor, Politix and Offbeat websites*
   __Jan 2013-present__
-  - Developed strategy for content optimization and distribution using a Facebook viral model.
+  - Developed strategy for content optimization using a Facebook distribution model
   - Covered topics from LGBT and women's rights to education and electoral politics.
   - Passionate about finding and crafting stories with a unique voice.
   - Wrote quickly for the web (up to 12 stories per day) based on real-time trends on the social web.
@@ -28,7 +28,7 @@ Topix (offbeat.topix.com and politix.topix.com)
 Topix (politix.topix.com)
 : *Senior Editor, Politix*
  __Dec 2011 - Jan 2013__
- - Spearheaded the Politix editorial team from the site's launch in 2012
+ - Spearheaded Politix editorial strategy from the site's launch in 2012
  - Shaped look and feel of content.
  - Managed and edited a team of writers working both in-house and remotely.
 
