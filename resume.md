@@ -21,6 +21,17 @@ Experienced political writer and editor with skills in viral content creation an
 * Editing
   : [Stuff about editing]
 
+* Social media marketing
+Successful ad buys (1c CPC) on Facebook
+
+* Software
+Multimedia software: Photoshop, iMovie
+Content management systems: Wordpress, Topix in-house CMS)
+Web design: HTML, CSS
+
+* Languages
+Conversant in French, German, Spanish, Portuguese.
+
 ------
 
 ### Experience {#experience}
